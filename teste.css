@@ -1,0 +1,78 @@
+header {
+  height: 100vh;
+  width: 100%; }
+  header h1, header h2, header h3 {
+    color: #333333; }
+  header p {
+    color: #333333;
+    font-size: 14px;
+    text-align: center; }
+
+.btn-default {
+  background-color: #fff;
+  color: #006CD8;
+  border-radius: 25px;
+  border: #006CD8 solid 2px;
+  width: 135px; }
+  .btn-default:hover {
+    background-color: #006CD8;
+    color: #fff; }
+
+.message, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.warning {
+  border-color: #006CD8; }
+
+.flex, .flexjustify, .flexalign {
+  display: flex; }
+
+.flexcollumn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex {
+  justify-content: center;
+  align-items: center; }
+
+.flexjustify {
+  justify-content: center; }
+
+.flexalign {
+  align-items: center; }
+
+.flexcollumn {
+  flex-direction: column; }
+
+#specs {
+  background-color: #efefef;
+  padding: 10vh 10vw 10vh 10vw; }
+
+#hwa {
+  padding: 10vh 15vw 10vh 15vw; }
+  #hwa p {
+    color: #333333;
+    font-size: 14px; }
+
+#photo {
+  background-image: url(https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg);
+  background-size: cover;
+  background-position: fixed;
+  height: 500px;
+  width: 835px;
+  transition: 0.5s ease all; }
+  #photo:hover {
+    opacity: 0.5;
+    cursor: pointer; }
+
+footer {
+  margin-top: 10vh;
+  text-align: center;
+  background-color: #efefef;
+  height: 10vh;
+  font-weight: bold; }
+
+/*# sourceMappingURL=teste.css.map */
