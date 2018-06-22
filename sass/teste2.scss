@@ -1,0 +1,135 @@
+
+// Vertical Rhythm e sprites
+
+@import 'compass/typography';
+@import 'compass/css3';
+@import 'compass/reset';
+@import "images/icons/*.png";
+@include all-icons-sprites;
+
+
+
+// CSS diverso ---------------------
+
+$textcolor: #333333;
+$cordestaque: #006CD8;
+$ceraregular: 'ceraregular';
+$cerabold: 'cerabold';
+
+@font-face {
+    font-family: 'ceraregular';
+    src: url(../fonts/cera/cera-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: 'cerabold';
+    src: url(../fonts/cera/cera-bold-webfont.woff);
+}
+
+h1,h2,h3,h4,h5,h6,b{
+    font-family: cerabold;
+}
+
+.btn-default{
+	@include adjust-font-size-to(1em);
+	line-height: 0.5em;
+	height: 48px;
+	font-family: $cerabold;
+	background-color: #fff;
+	color: $cordestaque;
+	border-radius: 25px;
+	border: $cordestaque solid 2px;
+	width: 144px;
+	&:hover{background-color: $cordestaque; color: #fff}
+}
+
+// Flex
+
+%flex-display{
+	display: flex;
+}
+
+%flex-display-full{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex{
+	@extend %flex-display;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexjustify{
+	@extend %flex-display;
+	justify-content: center;
+}
+
+.flexalign{
+	@extend %flex-display;
+	align-items: center;
+}
+
+.flexcollumn{
+	@extend %flex-display-full;
+	flex-direction: column;
+}
+
+@media (min-width: 1200px){
+	.container {
+	    max-width: 960px;
+	}
+}
+// ----------------------------------------
+
+
+
+// Vertical Rhythm ------------------------
+
+$base-font-size: 16px !global;
+$base-line-height: 24px !global;
+$rythm-unit: "rem" !global;
+$rem-to-px-fallback: true !global;
+@include establish-baseline;
+
+body{
+	@include rhythm-margins(2);
+	@include debug-vertical-alignment;
+	font-family: 'ceraregular';
+}
+
+p,iframe,button,div,img{
+	@include margin-trailer;
+}
+
+h1{
+	@include adjust-font-size-to(3.157rem);
+}
+h2{
+	@include adjust-font-size-to(2.369rem);
+}
+h3{
+	@include adjust-font-size-to(1.777rem);
+}
+h4{
+	@include adjust-font-size-to(1.333rem);
+}
+h5{
+	@include adjust-font-size-to(1em);
+}
+h6{
+	@include adjust-font-size-to(0.75em);
+}
+
+img.rhythmic{
+	display: block;
+	margin: 0px auto;
+	max-width: 100%;
+	height: auto;
+}
+
+#flor{
+	max-height: 408px;
+}
+// ---------------------------------------------------------------------------

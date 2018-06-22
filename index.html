@@ -4,21 +4,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Sass Test</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="teste.css">
+	<!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="stylesheets/teste2.css">
+	
+	<!-- Ritmo vertical -->
+	<script type="text/javascript" src="src/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="src/jquery.keeptherhythm.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("iframe").keepTheRhythm({
+                verticalAlignment: "top"
+            });
+        });
+
+        $(window).load(function () {
+            $("img.rhythmic").keepTheRhythm();
+        });
+    </script>
+
 </head>
 <body>
 	<header class="flex">
-		<div class="container flexcollumn">
+		<div class="container flexcollumn text-center">
 			<h1>I will endure!</h1>
+			<!-- <h2>I will endure!</h2>
+			<h3>I will endure!</h3>
+			<h4>I will endure!</h4> -->
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident atque ipsa in doloribus voluptatibus placeat dolor deleniti nihil non, minima amet, porro architecto repellendus saepe, debitis dolores, unde delectus eius.</p>
 			<button class="btn btn-default">Clica aqui</button>
+
 		</div>
 	</header>
 
-	<div id="specs">
+	<div id="">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo accusamus in ab quas necessitatibus deserunt doloremque est possimus nesciunt libero non, harum, sint? Ex id exercitationem minima, unde sint officiis.</div>
@@ -29,21 +49,35 @@
 	</div>
 
 	<div id="hwa" class="container">
-		<h3>Here we are!</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.
-		<br><br>
+		<h3 class="one">Here we are!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.</p>
+		
+		<b class="">lorem ipsum</b>
+		
+		<p class="pwindow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis.</p>
+		
 		<b>lorem ipsum</b>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.
-		<br><br>
-		<b>lorem ipsum</b>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.
-		</p>
+		
+		<p class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet accusamus, inventore harum dicta minus corrupti a voluptas fugit perspiciatis. Corporis, iste? Quibusdam, excepturi assumenda! Obcaecati enim molestias nobis facilis.</p>
 	</div>
 
-	<div id="photo" class="container flex img-fluid"></div>
+	<!-- <div id="photo" class="container img-fluid"></div> -->
 
-	<footer class="flex">@Productions</footer>
+	<div class="container" align="center">
+		<img id="flor" class="rhythmic" src="images/flor.jpg" alt="">
+	</div>
+
+	<div align="center" class="container">
+		<h1>it will display rigth?</h1>
+		<h2>it will display rigth?</h2>
+		<h3>it will display rigth?</h3>
+		<br>
+		<p>Buscando, porra!</p>
+	</div>
+
+	<!-- <footer class="flex">
+		<a href="#" class="icon icons-facebook mr-3"></a>
+		<a href="#" class="icon icons-tumblr"></a>
+	</footer> -->
 </body>
 </html>
