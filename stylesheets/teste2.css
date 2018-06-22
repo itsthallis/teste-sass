@@ -45,85 +45,13 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-.icons-sprite, .icons-facebook, .icons-nissanlogo, .icons-tumblr {
-  background-image: url('../images/icons-sf5fd23f9cb.png');
-  background-repeat: no-repeat; }
-
-.icons-facebook {
-  background-position: 0 0; }
-
-.icons-nissanlogo {
-  background-position: 0 -32px; }
-
-.icons-tumblr {
-  background-position: 0 -464px; }
-
-@font-face {
-  font-family: 'ceraregular';
-  src: url(../fonts/cera/cera-regular-webfont.woff); }
-@font-face {
-  font-family: 'cerabold';
-  src: url(../fonts/cera/cera-bold-webfont.woff); }
-h1, h2, h3, h4, h5, h6, b {
-  font-family: cerabold; }
-
-.btn-default {
-  font-size: 1em;
-  line-height: 1.5em;
-  line-height: 0.5em;
-  height: 48px;
-  font-family: "cerabold";
-  background-color: #fff;
-  color: #006CD8;
-  border-radius: 25px;
-  border: #006CD8 solid 2px;
-  width: 144px; }
-  .btn-default:hover {
-    background-color: #006CD8;
-    color: #fff; }
-
-.flex, .flexjustify, .flexalign {
-  display: flex; }
-
-.flexcollumn {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.flex {
-  justify-content: center;
-  align-items: center; }
-
-.flexjustify {
-  justify-content: center; }
-
-.flexalign {
-  align-items: center; }
-
-.flexcollumn {
-  flex-direction: column; }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 960px; } }
 html {
   font-size: 100%;
   line-height: 1.5em; }
 
 body {
   margin-top: 3em;
-  margin-bottom: 3em;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -moz-background-size: 100% 1.5em;
-  -o-background-size: 100% 1.5em;
-  -webkit-background-size: 100% 1.5em;
-  background-size: 100% 1.5em;
-  background-position: left top;
+  margin-bottom: 0em;
   font-family: 'ceraregular'; }
 
 p, iframe, button, div, img {
